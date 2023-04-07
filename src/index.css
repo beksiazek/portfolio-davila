@@ -9,9 +9,10 @@
 }
 
 :root {
-    --color-bg: #808080;
+    --color-bg: #d6a9b3;
     --color-primary: #ffc9d5;
     --color-primary-variant: #ee9aff;
+    --color-primary-variant-transparent: rgba(238, 154, 255, 0.3);
     --color-text: #424242;
     --color-text-hl: #cf2a69;
 }
@@ -24,6 +25,7 @@ body {
     background: var(--color-bg);
     margin-left: 16rem;
     height: 100vh;
+    overflow: hidden;
 }
 
 @media screen and (max-width: 600px) {
