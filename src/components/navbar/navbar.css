@@ -6,6 +6,7 @@ nav {
     position: fixed;
     height: 100%;
     overflow: auto;
+    box-shadow: 8px 0 10px rgba(0, 0, 0, 0.445);
 }
 
 nav img {

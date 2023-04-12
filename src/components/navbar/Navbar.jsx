@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import NavSocials from "../NavSocials/NavSocials";
 import Princess from "../../assets/princess.png";
 import "./navbar.css";
 
@@ -14,6 +15,7 @@ export default function Navbar() {
 				<Link to={`/portfolio`}>Portfolio</Link>
 				<Link to={`/about`}>About Me</Link>
 			</div>
+			<NavSocials />
 		</nav>
 	);
 }

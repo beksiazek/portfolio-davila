@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=DynaPuff:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:wght@300;400;700&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -19,17 +22,43 @@
 
 body {
     margin: 0;
+    font-family: 'DynaPuff', cursive;
 }
 
 #main {
     background: var(--color-bg);
     margin-left: 16rem;
-    height: 100vh;
-    overflow: hidden;
+}
+
+.img-info-right {
+    display: flex;
+    gap: 1rem;
+    color: var(--color-text);
+    align-items: center;
+}
+
+p {
+    font-family: 'Comic Neue', cursive;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+.header-title {
+    width: 100%;
+    margin-top: 2rem;
+    text-align: center;
+    font-size: 3rem;
+}
+
+.header-subtitle {
+    width: 100%;
+    margin-top: 1rem;
+    text-align: center;
+    font-weight: 500;
 }
 
 @media screen and (max-width: 600px) {
-    #main{
+    #main {
         margin-left: 0;
     }
 }
