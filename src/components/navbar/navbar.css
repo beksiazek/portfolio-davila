@@ -10,7 +10,7 @@ nav {
     box-shadow: 8px 0 10px rgba(0, 0, 0, 0.445);
 }
 
-nav img {
+.nav-image {
     max-width: 100%;
     height: auto;
     display: block;
@@ -58,7 +58,7 @@ nav .icon {
         text-shadow: 1px 1px 3px #000000;
     }
 
-    nav img:hover {
+    .nav-title:hover .nav-image {
         box-shadow: 0 0 13px #383838;
     }
     
@@ -87,7 +87,7 @@ nav .icon {
         margin: 0;
     }
 
-    nav img {
+    .nav-image {
         max-height: 7vh;
         padding: 0;
         margin: 0;
@@ -132,7 +132,7 @@ nav .icon {
         margin-right: auto;
     }
 
-    nav img {
+    .nav-image {
         max-height: 7vh;
         padding: 0;
     }

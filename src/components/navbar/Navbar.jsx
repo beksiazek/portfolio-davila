@@ -18,7 +18,7 @@ export default function Navbar() {
 		<>
 			<nav>
 				<Link to={`/`} className="nav-title">
-					<img src={Logo} alt="Princess" />
+					<img src={Logo} alt="Princess" className="nav-image"/>
 					<span>Maité Dávila</span>
 				</Link>
 				<NavItems>
