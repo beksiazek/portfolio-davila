@@ -10,6 +10,23 @@
 .slider img {
     width: 100%;
     height: 100vh;
+}
+
+.slide-text {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(238, 154, 255, 0.7);
+    border-radius: 20px;
+    padding: 1rem 2rem;
+}
+
+.portrait {
+    object-fit: contain;
+}
+
+.landscape {
     object-fit: cover;
 }
 
@@ -19,7 +36,7 @@
     padding: 0.3rem;
     font-size: 3.5rem;
     border-radius: 10px;
-    z-index: 10;
+    z-index: 1;
     cursor: pointer;
     user-select: none;
     background: var(--color-primary-variant-transparent);
@@ -39,16 +56,37 @@
 
 .slide {
     opacity: 0;
-    transition: 4s;
+    position: relative;
+    text-align: center;
 }
 
 .slide.active {
     opacity: 1;
-    transition: 2s;
+    transition: 3s;
 }
 
 @media (hover: hover) {
     .arrow:hover {
         background: transparent;
+    }
+}
+
+@media screen and (max-width:1000px) {
+    .slider, .slider img {
+        height: 90vh;
+    }
+
+    .slider {
+        display: flex;
+        align-items: center;
+    }
+
+    .portrait {
+        object-fit: cover;
+    }
+    
+    .landscape {
+        height: 70vh!important;
+        object-fit: cover;
     }
 }

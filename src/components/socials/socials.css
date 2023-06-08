@@ -1,0 +1,33 @@
+.socials {
+    position: fixed;
+    top: 0;
+    right: 4rem;
+    padding: 1rem;
+    border-radius: 0 0 10px 10px;
+    background: rgb(253, 255, 141);
+    z-index: 1;
+    color: var(--color-text-hl);
+    transition: var(--transition);
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+@media (hover: hover) {
+    .socials:hover {
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.445);
+        color: rgb(37, 37, 37);
+    }
+}
+
+@media screen and (max-width: 1000px){
+    .socials {
+        top: auto;
+        bottom: 15vh;
+        right: 0;
+        border-radius: 10px 0 0 10px;
+    }
+    .socials span {
+        display: none;
+    }
+}

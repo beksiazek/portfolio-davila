@@ -1,4 +1,5 @@
 import React from "react";
+import Footer from "../../components/footer/Footer";
 import header_img from "../../assets/about-header-img.jpg";
 import about_img from "../../assets/about-drawing.jpg";
 import "./about.css";
@@ -8,46 +9,43 @@ export default function About() {
 		<>
 			<header>
 				<img src={header_img} className="about-header-img" />
-			</header>
-			<section id="about">
 				<h1 className="header-title">About Me</h1>
 				<h2 className="header-subtitle">Who I am</h2>
+			</header>
+			<section id="about">
 				<p>
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-					Reiciendis ex consequuntur ullam molestias corporis,
-					officiis porro corrupti maiores quo, culpa quae quam ducimus
-					eum quia sapiente, aut facilis enim dicta!
+					Desde que soy pequeña me gusta dibujar, así que cuando
+					terminé la escuela secundaria decidí hacer una carrera
+					relacionada. Empecé a estudiar en IMAGE CAMPUS y en el año
+					2019 me recibí como animadora digital.
 				</p>
 				<p>
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-					Reiciendis ex consequuntur ullam molestias corporis,
-					officiis porro corrupti maiores quo, culpa quae quam ducimus
-					eum quia sapiente, aut facilis enim dicta! Lorem ipsum dolor
-					sit amet, consectetur adipisicing elit. Reiciendis ex
-					consequuntur ullam molestias corporis, officiis porro
-					corrupti maiores quo, culpa quae quam ducimus eum quia
-					sapiente, aut facilis enim dicta!
+					Como siempre hay algo nuevo para aprender y mejorar, luego
+					de terminar la carrera de animación seguí haciendo cursos
+					para aprender nuevos conceptos y perfeccionar aquellos que
+					ya había adquirido con la experiencia, entre ellos: pintura
+					digital, anatomía y modelo vivo, entre otros.
 				</p>
-				<div className="img-info-right">
+				<div className="img-info-side">
+					<div>
+						<p>
+							Al empezar a trabajar de manera freelance y en
+							equipo aprendí inclusive más cosas y logré
+							resultados muy satisfactorios! Es hermoso poder
+							poner en práctica todo lo que vengo adquiriendo
+							durante mis años como estudiante y artista.
+						</p>
+						<p>
+							A día de hoy, he participado en el desarrollo de
+							varios cortos y videoclips, algunos de los cuales inclusive fueron
+							nominados a multiples premios en el ámbito.
+						</p>
+						<p>Actualmente estoy trabajando como animadora de videos musicales para Dinnokkiva, una serie de contenido educativo para niños.</p>
+					</div>
 					<img src={about_img} className="about-img" />
-					<p>
-						Lorem, ipsum dolor sit amet consectetur adipisicing
-						elit. Sit, quasi quaerat assumenda ea doloribus aliquam,
-						sunt eaque laborum accusamus quo quod nesciunt non ullam
-						fuga optio eos impedit hic blanditiis?
-					</p>
 				</div>
-				<p>
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-					Reiciendis ex consequuntur ullam molestias corporis,
-					officiis porro corrupti maiores quo, culpa quae quam ducimus
-					eum quia sapiente, aut facilis enim dicta! Lorem ipsum dolor
-					sit amet, consectetur adipisicing elit. Reiciendis ex
-					consequuntur ullam molestias corporis, officiis porro
-					corrupti maiores quo, culpa quae quam ducimus eum quia
-					sapiente, aut facilis enim dicta!
-				</p>
 			</section>
+			<Footer />
 		</>
 	);
 }

@@ -9,12 +9,14 @@ import Portfolio from "./routes/Portfolio";
 import About from "./routes/About/About";
 import NotFound from "./routes/NotFound";
 import Navbar from "./components/navbar/Navbar";
+import Socials from "./components/socials/Socials";
 import "./index.css";
 
 const Layout = () => {
     return (
         <>
         <Navbar />
+		<Socials />
         <div id="main">
             <Outlet />
         </div>
