@@ -4,6 +4,6 @@ import "./socials.css";
 
 export default function Socials() {
   return (
-    <a className="socials" href="https://instagram.com" target={"_blank"}><BsInstagram /><span>Follow me!</span></a>
+    <a className="socials" href="https://instagram.com" target={"_blank"}><BsInstagram /><span>Seguime!</span></a>
   )
 }

@@ -1,5 +1,12 @@
 import img3 from "../../assets/slider-imgs/3.jpg";
+import img4 from "../../assets/slider-imgs/4972712.jpg";
+
 export const SliderData = [
+    {
+        image: img4,
+        orientation: "landscape",
+        text: "Fondo de Castillo, para un video musical de Princess",
+    },
     {
         image: img3,
         orientation: "landscape",

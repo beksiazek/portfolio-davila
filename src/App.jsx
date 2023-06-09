@@ -5,7 +5,7 @@ import {
 	Outlet,
 } from "react-router-dom";
 import Home from "./routes/Home";
-import Portfolio from "./routes/Portfolio";
+import Portfolio from "./routes/Portfolio/Portfolio";
 import About from "./routes/About/About";
 import NotFound from "./routes/NotFound";
 import Navbar from "./components/navbar/Navbar";

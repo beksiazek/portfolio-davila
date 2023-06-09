@@ -9,8 +9,8 @@ export default function About() {
 		<>
 			<header>
 				<img src={header_img} className="about-header-img" />
-				<h1 className="header-title">About Me</h1>
-				<h2 className="header-subtitle">Who I am</h2>
+				<h1 className="header-title">Acerca de Mi</h1>
+				<h2 className="header-subtitle">Quién soy</h2>
 			</header>
 			<section id="about">
 				<p>

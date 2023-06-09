@@ -19,6 +19,7 @@
     --color-text: #424242;
     --color-text-hl: #cf2a69;
     --transition: 0.7s;
+    overflow: overlay;
 }
 
 body {
@@ -32,11 +33,15 @@ body {
     margin-left: 16rem;
     z-index: 0;
     position: relative;
+    min-height: 100vh;
 }
 
-.img-info-side {
-    display: flex;
-    align-items: center;
+section > * {
+    padding: 1rem 5.4rem;
+}
+
+a {
+    cursor: pointer;
 }
 
 p {
@@ -44,6 +49,16 @@ p {
     font-weight: 400;
     line-height: 1.5;
     font-size: 1.05rem;
+}
+
+hr {
+    border-top: 3px dashed rgb(253, 255, 141);
+    border-radius: 2px;
+}
+
+.img-info-side {
+    display: flex;
+    align-items: center;
 }
 
 .header-title {
@@ -60,6 +75,7 @@ p {
     text-align: center;
     font-weight: 500;
 }
+
 
 @media screen and (max-width: 1000px) {
     #main {

@@ -45,12 +45,12 @@
 }
 
 .arrow.left {
-    margin-left: 1rem;
+    margin-left: 2rem;
     left: 0;
 }
 
 .arrow.right {
-    margin-right: 1rem;
+    margin-right: 2rem;
     right: 0;
 }
 

@@ -2,10 +2,6 @@
     display: block;
 }
 
-#about > * {
-    padding: 1rem 5.4rem;
-}
-
 #about:last-child {
     padding-bottom: 4rem;
 }

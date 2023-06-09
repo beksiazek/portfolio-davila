@@ -38,7 +38,7 @@ export default function ImageSlider({ slides }) {
 	}
 
 	return (
-		<section className="slider">
+		<div className="slider">
 			{slides.map((slide, index) => {
 				return (
 					<div
@@ -72,6 +72,6 @@ export default function ImageSlider({ slides }) {
 					setUserInteraction(true);
 				}}
 			/>
-		</section>
+		</div>
 	);
 }
