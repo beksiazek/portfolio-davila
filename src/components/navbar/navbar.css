@@ -6,7 +6,7 @@ nav {
     position: fixed;
     height: 100%;
     overflow: auto;
-    z-index: 10;
+    z-index: 1;
     box-shadow: 8px 0 10px rgba(0, 0, 0, 0.445);
 }
 
@@ -142,7 +142,6 @@ nav .icon {
         height: 100%;
         width: 0;
         position: fixed;
-        z-index: 1;
         top: 0;
         left: 0;
         background-color: var(--color-primary);

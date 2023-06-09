@@ -1,5 +1,5 @@
 import React from "react";
-import "./filters.css";
+import "./portfolioFilters.css";
 
 export default function Filters(props) {
 	const { currentOwnerTag, currentTypeTag, setCurrentOwnerTag, setCurrentTypeTag } = props;

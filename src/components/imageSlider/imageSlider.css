@@ -36,7 +36,6 @@
     padding: 0.3rem;
     font-size: 3.5rem;
     border-radius: 10px;
-    z-index: 1;
     cursor: pointer;
     user-select: none;
     background: var(--color-primary-variant-transparent);
