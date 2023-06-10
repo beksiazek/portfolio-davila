@@ -61,7 +61,7 @@
 
 .slide.active {
     opacity: 1;
-    transition: 3s;
+    transition: 2s;
 }
 
 @media (hover: hover) {
