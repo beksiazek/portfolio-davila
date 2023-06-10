@@ -72,7 +72,7 @@ iframe {
 }
 
 #modal-image {
-  min-width: 65vw;
+  max-height: 60vh;
 }
 
 .close {
