@@ -89,3 +89,17 @@
         object-fit: cover;
     }
 }
+
+@media screen and (max-width:600px) {
+    .arrow.left {
+        margin-left: 0;
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+    }
+    
+    .arrow.right {
+        margin-right: 0;
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+    }
+}

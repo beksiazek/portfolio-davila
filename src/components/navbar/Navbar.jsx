@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import { Link } from "react-router-dom";
 import { FaBars } from "react-icons/fa";
 import NavItems from "./NavItems";
@@ -6,8 +6,6 @@ import Logo from "../../assets/logo.png";
 import "./navbar.css";
 
 export default function Navbar() {
-	const renderSideNav = window.innerWidth <= 600;
-
 	function openNav() {
 		document.getElementById("nav-links").style.width = "70vw";
 	}
@@ -23,19 +21,21 @@ export default function Navbar() {
 					<img src={Logo} alt="Princess" className="nav-image" />
 					<span>Maité Dávila</span>
 				</Link>
-				<NavItems>
-					{renderSideNav && (
+				<NavItems closeNav={closeNav}>
+					{window.innerWidth <= 600 ? (
 						<>
-							<Link to={`/`}>Home</Link>
-							<a className="closebtn" onClick={() => closeNav()}>
+							<Link onClick={closeNav} to={`/`}>Home</Link>
+							<span className="closebtn" onClick={() => closeNav()}>
 								&times;
-							</a>
+							</span>
 						</>
+					) : (
+						""
 					)}
 				</NavItems>
-				<a className="icon" onClick={() => openNav()}>
+				<span className="icon" onClick={() => openNav()}>
 					<FaBars />
-				</a>
+				</span>
 			</nav>
 		</>
 	);
