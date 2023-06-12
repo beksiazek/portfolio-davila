@@ -11,6 +11,7 @@ import NotFound from "./routes/NotFound";
 import Navbar from "./components/navbar/Navbar";
 import Socials from "./components/socials/Socials";
 import "./index.css";
+import Contact from "./routes/Contact/Contact";
 
 const Layout = () => {
     return (
@@ -35,13 +36,15 @@ const router = createBrowserRouter([
 				errorElement: <NotFound />,
 			},
 			{
-				path: "/portfolio",
-				element: <Portfolio />,
-			},
-			{
 				path: "/about",
 				element: <About />,
 			},
+			{
+				path: "/portfolio",
+				element: <Portfolio />,
+			},
+			{path: "/contact",
+		element: <Contact />},
 		],
 	},
 ]);

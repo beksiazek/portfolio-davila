@@ -1,0 +1,15 @@
+#contact {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    min-height: inherit;
+}
+
+#contact > * {
+    padding: 0!important; 
+}
+
+.contact-info {
+    text-align: center;
+}

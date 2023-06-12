@@ -7,7 +7,7 @@ export default function NavItems({children}) {
             {children}
 			<Link to={`/about`}>Acerca de Mi</Link>
 			<Link to={`/portfolio`}>Portfolio</Link>
-			<Link to={`/`}>Contacto</Link>
+			<Link to={`/contact`}>Contacto</Link>
 		</div>
 	);
 }

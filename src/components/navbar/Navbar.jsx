@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { FaBars } from "react-icons/fa";
 import NavItems from "./NavItems";
@@ -6,6 +6,8 @@ import Logo from "../../assets/logo.png";
 import "./navbar.css";
 
 export default function Navbar() {
+	const renderSideNav = window.innerWidth <= 600;
+
 	function openNav() {
 		document.getElementById("nav-links").style.width = "70vw";
 	}
@@ -22,15 +24,13 @@ export default function Navbar() {
 					<span>Maité Dávila</span>
 				</Link>
 				<NavItems>
-					{window.innerWidth <= 600 ? (
+					{renderSideNav && (
 						<>
 							<Link to={`/`}>Home</Link>
 							<a className="closebtn" onClick={() => closeNav()}>
 								&times;
 							</a>
 						</>
-					) : (
-						""
 					)}
 				</NavItems>
 				<a className="icon" onClick={() => openNav()}>
