@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Filters from "../../components/PortfolioFilters/PortfolioFilters";
 import { AiOutlinePlayCircle } from "react-icons/ai";
 import PortfolioModal from "../../components/PortfolioModal/PortfolioModal";
@@ -79,10 +79,14 @@ export default function Portfolio() {
 	};
 
 	window.onclick = function (event) {
-		if (event.target == document.getElementById("portfolio-modal")) {
+		if (event.target === document.getElementById("portfolio-modal")) {
 			closeModal();
 		}
 	};
+
+	useEffect(() => {
+		document.body.style.setProperty("--overflow-behavior", "scroll");
+	}, []);
 
 	return (
 		<section id="portfolio">

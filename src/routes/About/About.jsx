@@ -1,10 +1,14 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Footer from "../../components/footer/Footer";
 import header_img from "../../assets/about-header-img.jpg";
 import about_img from "../../assets/about-drawing.jpg";
 import "./about.css";
 
 export default function About() {
+	useEffect(() => {
+		document.body.style.setProperty("--overflow-behavior", "scroll");
+	}, []);
+
 	return (
 		<>
 			<header>

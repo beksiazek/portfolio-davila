@@ -1,10 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=DynaPuff:wght@400;500;600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Comic+Neue:wght@300;400;700&display=swap');
 
-html {
-    overflow-y: overlay;
-}
-
 * {
     margin: 0;
     padding: 0;
@@ -23,11 +19,13 @@ html {
     --color-text: #424242;
     --color-text-hl: #cf2a69;
     --transition: 0.7s;
+    --overflow-behavior: hidden;
 }
 
 body {
     margin: 0;
     font-family: 'DynaPuff', cursive;
+    overflow-y: var(--overflow-behavior);
 }
 
 #main {
