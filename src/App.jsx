@@ -1,9 +1,5 @@
 import React from "react";
-import {
-	createBrowserRouter,
-	RouterProvider,
-	Outlet,
-} from "react-router-dom";
+import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
 import Home from "./routes/Home";
 import Portfolio from "./routes/Portfolio/Portfolio";
 import About from "./routes/About/About";
@@ -12,18 +8,21 @@ import Navbar from "./components/Navbar/Navbar";
 import Socials from "./components/socials/Socials";
 import "./index.css";
 import Contact from "./routes/Contact/Contact";
+import getSlides from "./utils/getSlides";
+import { PortfolioData } from "./assets/PortfolioData";
 
 const Layout = () => {
-    return (
-        <>
-        <Navbar />
-		<Socials />
-        <div id="main">
-            <Outlet />
-        </div>
-        </>
-    )
-}
+	return (
+		<>
+			<Navbar />
+			<Socials />
+			<div id="main">
+				<Outlet />
+			</div>
+		</>
+	);
+};
+
 
 const router = createBrowserRouter([
 	{
@@ -32,7 +31,11 @@ const router = createBrowserRouter([
 		children: [
 			{
 				path: "/",
-				element: <Home />,
+				element: (
+					<Home
+						slides={getSlides(PortfolioData)}
+					/>
+				),
 				errorElement: <NotFound />,
 			},
 			{
@@ -41,10 +44,9 @@ const router = createBrowserRouter([
 			},
 			{
 				path: "/portfolio",
-				element: <Portfolio />,
+				element: <Portfolio portfolioData={PortfolioData}/>,
 			},
-			{path: "/contact",
-		element: <Contact />},
+			{ path: "/contact", element: <Contact /> },
 		],
 	},
 ]);
@@ -52,7 +54,7 @@ const router = createBrowserRouter([
 export default function App() {
 	return (
 		<React.StrictMode>
-            <RouterProvider router={router} />
+			<RouterProvider router={router} />
 		</React.StrictMode>
 	);
 }

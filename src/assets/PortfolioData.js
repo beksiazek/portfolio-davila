@@ -38,7 +38,7 @@ export const PortfolioData = [
     {
         content: "bar",
         type: "jpg",
-        orientation: "portrait",
+        orientation: "landscape",
         title: "Bar",
         description: "Fondo para un proyecto final de animación.",
         owner: "me",
@@ -65,7 +65,7 @@ export const PortfolioData = [
     {
         content: "castillo",
         type: "jpg",
-        orientation: "portrait",
+        orientation: "landscape",
         title: "Jungle, for Dinokkivva",
         description: "Fondo de la jungla, para un video musical de DINOKKIVVA",
         owner: "me",
@@ -146,7 +146,7 @@ export const PortfolioData = [
     {
         content: "cuarto",
         type: "jpg",
-        orientation: "portrait",
+        orientation: "landscape",
         title: "Jungle, for Dinokkivva",
         description: "Fondo de la jungla, para un video musical de DINOKKIVVA",
         owner: "me",
@@ -186,7 +186,7 @@ export const PortfolioData = [
         title: "Jungle, for Dinokkivva",
         description: "Fondo de la jungla, para un video musical de DINOKKIVVA",
         owner: "me",
-        fav: false,
+        fav: true,
     },
     {
         content: "hongos",
@@ -204,12 +204,12 @@ export const PortfolioData = [
         title: "Jungle, for Dinokkivva",
         description: "Fondo de la jungla, para un video musical de DINOKKIVVA",
         owner: "me",
-        fav: false,
+        fav: true,
     },
     {
         content: "mansion",
         type: "jpg",
-        orientation: "portrait",
+        orientation: "landscape",
         title: "Jungle, for Dinokkivva",
         description: "Fondo de la jungla, para un video musical de DINOKKIVVA",
         owner: "me",
@@ -218,7 +218,7 @@ export const PortfolioData = [
     {
         content: "marca_alemana",
         type: "jpg",
-        orientation: "portrait",
+        orientation: "landscape",
         title: "Jungle, for Dinokkivva",
         description: "Fondo de la jungla, para un video musical de DINOKKIVVA",
         owner: "client",
@@ -249,7 +249,7 @@ export const PortfolioData = [
         title: "Jungle, for Dinokkivva",
         description: "Fondo de la jungla, para un video musical de DINOKKIVVA",
         owner: "client",
-        fav: false,
+        fav: true,
     },
     {
         content: "polillas",

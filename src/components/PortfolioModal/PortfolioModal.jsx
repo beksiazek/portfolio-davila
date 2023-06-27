@@ -1,6 +1,6 @@
 import React from "react";
 import ImageMagnifier from "../ImageMagnifier/ImageMagnifier";
-import contentUrlGenerator from "../../utils/ContentUrlGenerator/contentUrlGenerator";
+import contentUrlGenerator from "../../utils/contentUrlGenerator";
 import "./portfolioModal.css";
 
 export default function PortfolioModal(props) {

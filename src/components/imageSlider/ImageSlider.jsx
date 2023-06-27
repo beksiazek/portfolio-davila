@@ -4,7 +4,7 @@ import {
 	MdOutlineArrowBackIos,
 	MdOutlineArrowForwardIos,
 } from "react-icons/md";
-import contentUrlGenerator from "../../utils/ContentUrlGenerator/contentUrlGenerator";
+import contentUrlGenerator from "../../utils/contentUrlGenerator";
 import "./imageSlider.css";
 
 export default function ImageSlider({ slides }) {

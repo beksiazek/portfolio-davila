@@ -3,11 +3,10 @@ import Filters from "../../components/PortfolioFilters/PortfolioFilters";
 import { AiOutlinePlayCircle } from "react-icons/ai";
 import PortfolioModal from "../../components/PortfolioModal/PortfolioModal";
 import Footer from "../../components/Footer/Footer";
-import { PortfolioData } from "../../assets/PortfolioData";
-import contentUrlGenerator from "../../utils/ContentUrlGenerator/contentUrlGenerator";
+import contentUrlGenerator from "../../utils/contentUrlGenerator";
 import "./portfolio.css";
 
-export default function Portfolio() {
+export default function Portfolio({ portfolioData }) {
 	const [currentOwnerTag, setCurrentOwnerTag] = useState("");
 	const [currentTypeTag, setCurrentTypeTag] = useState("");
 	const [displayModal, setDisplayModal] = useState(false);
@@ -44,7 +43,7 @@ export default function Portfolio() {
 			/>
 			<div className="gallery-container">
 				<ul className="masonry-gallery">
-					{PortfolioData.map((item, index) => {
+					{portfolioData.map((item, index) => {
 						return (
 							<li
 								onClick={() => {
