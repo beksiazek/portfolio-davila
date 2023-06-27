@@ -57,3 +57,13 @@ ul {
         color: rgb(211, 43, 226);
     }
 }
+
+@media screen and (max-width: 600px) {
+    .masonry-gallery {
+        columns: 8rem;
+    }
+
+    .gallery-container {
+        padding: 1rem;
+    }
+}

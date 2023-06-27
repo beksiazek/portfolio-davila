@@ -12,7 +12,7 @@ export default function About() {
 	return (
 		<>
 			<header>
-				<img src={header_img} className="about-header-img" />
+				<img src={header_img} className="about-header-img" alt="Hands drawing."/>
 				<h1 className="header-title">Acerca de Mi</h1>
 				<h2 className="header-subtitle">Quién soy</h2>
 			</header>
@@ -46,7 +46,7 @@ export default function About() {
 						</p>
 						<p>Actualmente estoy trabajando como animadora de videos musicales para Dinnokkiva, una serie de contenido educativo para niños.</p>
 					</div>
-					<img src={about_img} className="about-img" />
+					<img src={about_img} className="about-img" alt="Little me painting." />
 				</div>
 			</section>
 			<Footer />
