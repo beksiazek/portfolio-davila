@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import Footer from "../../components/Footer/Footer";
-import header_img from "../../assets/about-header-img.jpg";
-import about_img from "../../assets/about-drawing.jpg";
+import header_img from "../../assets/about_header.jpg";
+import about_img from "../../assets/about_me.jpg";
 import "./about.css";
 
 export default function About() {
