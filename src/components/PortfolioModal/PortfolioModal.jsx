@@ -8,12 +8,6 @@ export default function PortfolioModal(props) {
 	return (
 		<div id="portfolio-modal" className="modal">
 			<div className="modal-content">
-				<div className="modal-header">
-					<h2>{item.title}</h2>
-					<span className="close" onClick={closeModal}>
-						&times;
-					</span>
-				</div>
 				<div className="modal-body">
 					{item.type === "avi" ? (
 						<iframe
@@ -24,9 +18,6 @@ export default function PortfolioModal(props) {
 					) : (
 						<ImageMagnifier image={contentUrlGenerator(item.content, item.type)}/>
 					)}
-				</div>
-				<div className="modal-footer">
-					<p>{item.description}</p>
 				</div>
 			</div>
 		</div>

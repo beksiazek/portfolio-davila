@@ -56,11 +56,7 @@ export default function ImageSlider({ slides }) {
 							<>
 								<img
 									src={
-										slide.type === "avi"
-											? "https://img.youtube.com/vi/" +
-											  /[^/]*$/.exec(slide.content)[0] +
-											  "/maxresdefault.jpg"
-											: contentUrlGenerator(slide.content, "jpg")
+										contentUrlGenerator(slide.content, slide.type)
 									}
 									alt={slide.description}
 									className={slide.orientation}

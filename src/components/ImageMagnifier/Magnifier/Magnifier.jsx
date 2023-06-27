@@ -29,7 +29,7 @@ export default function Magnifier(props) {
 				width: `${magnifierWidth}px`,
 				// move element center to cursor pos
 				top: `${y}px`,
-				left: `${x + magnifierWidth}px`,
+				left: `${x}px`,
 				backgroundImage: `url('${image}')`,
 				//calculate zoomed image size
 				backgroundSize: `${imgWidth * zoomLevel}px ${
