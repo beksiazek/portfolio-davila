@@ -1,5 +1,14 @@
 export const PortfolioData = [
     {
+        content: "https://www.youtube.com/embed/zCvJdaQESyo",
+		type: "avi",
+        orientation: "landscape",
+        title: "DULCE",
+		description: "Video animado desarrollado junto con mis compañeros de equipo para nuestra tesis de la tecnicatura.",
+		owner: "me",
+        fav: true,
+    },
+    {
         content: "https://www.youtube.com/embed/K2xjdT_IvNc",
 		type: "avi",
         orientation: "landscape",
@@ -70,6 +79,15 @@ export const PortfolioData = [
         description: "Fondo de la jungla, para un video musical de DINOKKIVVA",
         owner: "me",
         fav: false,
+    },
+    {
+        content: "https://www.youtube.com/embed/fHxoahabUcM",
+		type: "avi",
+        orientation: "landscape",
+        title: "Make a Wish",
+		description: "Video musical animado para la cantante Charlene.",
+		owner: "client",
+        fav: true,
     },
     {
         content: "chica2",
