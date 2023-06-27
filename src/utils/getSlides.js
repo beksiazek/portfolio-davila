@@ -7,7 +7,7 @@ const isPortrait = (item) => {
 };
 
 const isMobile = () => {
-	return window.screen.width <= 600;
+	return window.screen.width <= 800;
 };
 
 export default function getSlides(items) {

@@ -101,8 +101,7 @@ iframe {
   }
 
   iframe {
-    max-width: 100%;
-    min-width: 100%;
+    width: 100vw;
     height: auto;
     aspect-ratio: 16/9;
   }
