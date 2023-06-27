@@ -1,9 +1,9 @@
 import React from 'react';
-import { BsInstagram } from "react-icons/bs";
+import { TbMail } from "react-icons/tb";
 import "./socials.css";
 
 export default function Socials() {
   return (
-    <a className="socials" href="https://instagram.com" target={"_blank"}><BsInstagram /><span>Seguime!</span></a>
+    <a className="socials" href="mailto:maitedavila1606@gmail.com" rel="noopener noreferrer" target={"_blank"}><TbMail className='socials-icon'/><span>Hablemos!</span></a>
   )
 }

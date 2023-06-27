@@ -8,7 +8,7 @@ import Home from "./routes/Home";
 import Portfolio from "./routes/Portfolio/Portfolio";
 import About from "./routes/About/About";
 import NotFound from "./routes/NotFound";
-import Navbar from "./components/navbar/Navbar";
+import Navbar from "./components/Navbar/Navbar";
 import Socials from "./components/socials/Socials";
 import "./index.css";
 import Contact from "./routes/Contact/Contact";

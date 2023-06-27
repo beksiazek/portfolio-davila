@@ -13,6 +13,10 @@
     gap: 4px;
 }
 
+.socials-icon {
+    font-size: 1.5rem;
+}
+
 @media (hover: hover) {
     .socials:hover {
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.445);

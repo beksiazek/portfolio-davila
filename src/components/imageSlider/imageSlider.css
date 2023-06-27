@@ -1,10 +1,13 @@
 .slider {
     position: relative;
     height:100vh;
-    display: block;
     justify-content: center;
     align-items: center;
     overflow: hidden;
+}
+
+.slider iframe {
+    height: 70vh;
 }
 
 .slider img {
@@ -12,14 +15,20 @@
     height: 100vh;
 }
 
-.slide-text {
+.slide-title {
+    display: flex;
+    align-items: center;
+    gap: 0.7rem;
+    background: rgba(238, 154, 255, 0.7);
+    border-radius: 20px;
+    padding: 1rem 1.5rem;
+}
+
+.slide-ttip {
     position: absolute;
     bottom: 20px;
     left: 50%;
     transform: translate(-50%, -50%);
-    background: rgba(238, 154, 255, 0.7);
-    border-radius: 20px;
-    padding: 1rem 2rem;
 }
 
 .portrait {
@@ -64,9 +73,24 @@
     transition: 2s;
 }
 
+.slide-title-icon {
+    line-height: 0;
+    font-size: 1.5rem;
+    animation: colorful 2s ease-in-out infinite alternate;
+}
+
+@keyframes colorful{
+    From{color: rgb(193, 255, 78)}
+To {color: deeppink}
+}
+
 @media (hover: hover) {
     .arrow:hover {
         background: transparent;
+    }
+
+    .slide:hover .play-button {
+        color: rgb(211, 43, 226);
     }
 }
 
@@ -91,6 +115,10 @@
 }
 
 @media screen and (max-width:600px) {
+    .slide-title {
+        padding: 0.7rem 1rem;
+    }
+
     .arrow.left {
         margin-left: 0;
         border-top-left-radius: 0;

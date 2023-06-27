@@ -13,3 +13,9 @@
 .contact-info {
     text-align: center;
 }
+
+.email {
+    padding-top: 2rem;
+    display:flex;
+    font-size: 2rem;
+}

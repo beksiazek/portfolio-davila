@@ -21,7 +21,7 @@ export default function Magnifier(props) {
                 pointerEvents: "none",
                 opacity: "1",
                 border: "1px solid lightgray",
-                backgroundColor: "white",
+                backgroundColor: "grey",
                 backgroundRepeat: "no-repeat",
 				display: showMagnifier ? "" : "none",
 				// set size of magnifier

@@ -1,4 +1,5 @@
 import React, { useState, useRef, useEffect } from "react";
+import { BsStars } from "react-icons/bs";
 import {
 	MdOutlineArrowBackIos,
 	MdOutlineArrowForwardIos,
@@ -6,7 +7,7 @@ import {
 import "./imageSlider.css";
 
 export default function ImageSlider({ slides }) {
-	const [currentImage, setCurrentImage] = useState(0);
+	const [currentItem, setCurrentItem] = useState(0);
 	const [userInteraction, setUserInteraction] = useState(false);
 	const length = slides.length;
 	const timeoutRef = useRef(null);
@@ -18,20 +19,23 @@ export default function ImageSlider({ slides }) {
 	};
 
 	const nextSlide = () => {
-		setCurrentImage(currentImage === length - 1 ? 0 : currentImage + 1);
+		setCurrentItem(currentItem === length - 1 ? 0 : currentItem + 1);
 	};
 
 	const prevSlide = () => {
-		setCurrentImage(currentImage === 0 ? length - 1 : currentImage - 1);
+		setCurrentItem(currentItem === 0 ? length - 1 : currentItem - 1);
 	};
 
 	useEffect(() => {
 		resetTimeout();
-		timeoutRef.current = setTimeout(() => nextSlide(), userInteraction ? delay.user : delay.auto);
+		timeoutRef.current = setTimeout(
+			() => nextSlide(),
+			userInteraction ? delay.user : delay.auto
+		);
 		return () => {
 			resetTimeout();
 		};
-	}, [currentImage]);
+	}, [currentItem]);
 
 	if (!Array.isArray(slides) || slides.length <= 0) {
 		return null;
@@ -43,18 +47,38 @@ export default function ImageSlider({ slides }) {
 				return (
 					<div
 						className={
-							index === currentImage ? "slide active" : "slide"
+							index === currentItem ? "slide active" : "slide"
 						}
 						key={index}
 					>
-						{index === currentImage && (
-							<img
-								src={slide.image}
-								alt="example"
-								className={slide.orientation}
-							/>
+						{index === currentItem && (
+							<>
+								<img
+									src={
+										slide.type === "animation"
+											? "https://img.youtube.com/vi/" +
+											  /[^/]*$/.exec(slide.content)[0] +
+											  "/maxresdefault.jpg"
+											: slide.content
+									}
+									alt={slide.description}
+									className={slide.orientation}
+								/>
+							</>
 						)}
-						<p className="slide-text">{slide.text}</p>
+						<div className="slide-ttip tooltip">
+							<span className="tooltiptext">
+								Ve esta
+								{slide.type === "animation"
+									? " animación "
+									: " ilustración "}
+								y muchas más en la sección Portfolio!
+							</span>
+							<p className="slide-title">
+								{slide.title}
+								<BsStars className="slide-title-icon" />
+							</p>
+						</div>
 					</div>
 				);
 			})}

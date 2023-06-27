@@ -16,12 +16,12 @@ export default function PortfolioModal(props) {
 				<div className="modal-body">
 					{item.type === "animation" ? (
 						<iframe
-							src="https://www.youtube.com/embed/K2xjdT_IvNc"
+							src={item.content}
 							title="YouTube video player"
 							allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen"
 						></iframe>
 					) : (
-						<ImageMagnifier image={item.image}/>
+						<ImageMagnifier image={item.content}/>
 					)}
 				</div>
 				<div className="modal-footer">

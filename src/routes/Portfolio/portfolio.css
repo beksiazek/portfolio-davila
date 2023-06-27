@@ -1,6 +1,6 @@
 .gallery-container {
     border-radius: 0.5rem;
-    padding: 1rem 5.4rem;
+    padding: 1rem 5.4rem 3rem 5.4rem;
     margin: 0 0;
 }
 
@@ -16,37 +16,44 @@ ul {
     padding: 0;
 }
 
-.masonry-gallery li {
+.portfolio-item {
     break-inside: avoid;
     opacity: 0;
     height: 0;
     transform: scale(0);
-    transition: 2s all;
+    transition: 1s;
+    border-radius: 20px 25px;
 }
 
-.masonry-gallery li.active {
+.portfolio-item.active {
     height: auto;
     transform: scale(1);
     opacity: 1;
 }
-.masonry-gallery li img {
+.portfolio-item img {
     display: block;
     height: auto;
     max-width: 100%;
     margin-bottom: 0;
-    transition: 2s;
+    border-radius: 25px 30px;
+    transition: 1s;
 }
 
-.masonry-gallery li.active img {
+.portfolio-item.active img {
     margin-bottom: 1.5rem;
 }
 
-.play-button {
-    position: absolute;
-    top: 50%; left: 50%;
-    transform: translate(-50%,-50%);
-    width: 30%;
-    height: 30%;
-    opacity: 0.8;
-    color: rgb(138, 69, 127);
+@media (hover: hover) {
+    .portfolio-item:hover {
+        box-shadow: 0 0 8px 3px rgba(0, 0, 0, 0.418);
+        border-radius: 7px;
+    }
+
+    .portfolio-item:hover img {
+        border-radius: 7px;
+    }
+
+    .portfolio-item:hover .play-button {
+        color: rgb(211, 43, 226);
+    }
 }

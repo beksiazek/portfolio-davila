@@ -30,13 +30,13 @@ body {
 
 #main {
     background: var(--color-bg);
-    background:url("/src/assets/pattern.svg");
+    background: url("/src/assets/pattern.svg");
     margin-left: 16rem;
     position: relative;
     min-height: 100vh;
 }
 
-section > * {
+section>* {
     padding: 1rem 5.4rem;
 }
 
@@ -76,14 +76,59 @@ hr {
     font-weight: 500;
 }
 
+.play-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 30%;
+    height: 30%;
+    opacity: 0.8;
+    color: rgb(138, 69, 127);
+    transition: 1s;
+}
+
+.tooltiptext {
+    visibility: hidden;
+    max-width: 20vw;
+    background-color: #443737;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0.5rem;
+    border-radius: 6px;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -60px;
+    opacity: 0;
+    transition: opacity 0.3s;
+    z-index: 1;
+}
+
+.tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+}
+
+@media (hover: hover) {
+    .tooltip:hover .tooltiptext {
+        visibility: visible;
+        opacity: 1;
+    }
+}
 
 @media screen and (max-width: 1000px) {
     #main {
         margin-left: 0;
         margin-top: 10vh;
-    }    
+    }
 }
 
-@media screen and (max-width: 600px) {
-
-}
+@media screen and (max-width: 600px) {}
