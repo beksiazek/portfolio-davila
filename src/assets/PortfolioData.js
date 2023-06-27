@@ -14,7 +14,7 @@ export const PortfolioData = [
         orientation: "portrait",
         title: "Jungle, for Dinokkivva",
         description: "Fondo de la jungla, para un video musical de DINOKKIVVA",
-        owner: "client",
+        owner: "me",
         fav: true,
     },
     {
@@ -23,7 +23,7 @@ export const PortfolioData = [
         orientation: "portrait",
         title: "Jungle, for Dinokkivva",
         description: "Fondo de la jungla, para un video musical de DINOKKIVVA",
-        owner: "client",
+        owner: "me",
         fav: true,
     },
     {
@@ -32,7 +32,7 @@ export const PortfolioData = [
         orientation: "portrait",
         title: "Jungle, for Dinokkivva",
         description: "Fondo de la jungla, para un video musical de DINOKKIVVA",
-        owner: "client",
+        owner: "me",
         fav: false,
     },
     {
@@ -41,7 +41,7 @@ export const PortfolioData = [
         orientation: "portrait",
         title: "Jungle, for Dinokkivva",
         description: "Fondo de la jungla, para un video musical de DINOKKIVVA",
-        owner: "client",
+        owner: "me",
         fav: true,
     },
     {
@@ -50,7 +50,7 @@ export const PortfolioData = [
         orientation: "portrait",
         title: "Jungle, for Dinokkivva",
         description: "Fondo de la jungla, para un video musical de DINOKKIVVA",
-        owner: "client",
+        owner: "me",
         fav: false,
     },
     {
@@ -59,7 +59,7 @@ export const PortfolioData = [
         orientation: "portrait",
         title: "Jungle, for Dinokkivva",
         description: "Fondo de la jungla, para un video musical de DINOKKIVVA",
-        owner: "client",
+        owner: "me",
         fav: false,
     },
     {
@@ -68,7 +68,7 @@ export const PortfolioData = [
         orientation: "portrait",
         title: "Jungle, for Dinokkivva",
         description: "Fondo de la jungla, para un video musical de DINOKKIVVA",
-        owner: "client",
+        owner: "me",
         fav: false,
     },
     {
@@ -77,7 +77,7 @@ export const PortfolioData = [
         orientation: "portrait",
         title: "Jungle, for Dinokkivva",
         description: "Fondo de la jungla, para un video musical de DINOKKIVVA",
-        owner: "client",
+        owner: "me",
         fav: true,
     },
     {
@@ -86,7 +86,7 @@ export const PortfolioData = [
         orientation: "portrait",
         title: "Jungle, for Dinokkivva",
         description: "Fondo de la jungla, para un video musical de DINOKKIVVA",
-        owner: "client",
+        owner: "me",
         fav: true,
     },
     {
@@ -95,7 +95,7 @@ export const PortfolioData = [
         orientation: "portrait",
         title: "Jungle, for Dinokkivva",
         description: "Fondo de la jungla, para un video musical de DINOKKIVVA",
-        owner: "client",
+        owner: "me",
         fav: false,
     },
     {
@@ -104,7 +104,7 @@ export const PortfolioData = [
         orientation: "portrait",
         title: "Jungle, for Dinokkivva",
         description: "Fondo de la jungla, para un video musical de DINOKKIVVA",
-        owner: "client",
+        owner: "me",
         fav: false,
     },
     {
@@ -122,7 +122,7 @@ export const PortfolioData = [
         orientation: "portrait",
         title: "Jungle, for Dinokkivva",
         description: "Fondo de la jungla, para un video musical de DINOKKIVVA",
-        owner: "client",
+        owner: "me",
         fav: false,
     },
     {
@@ -131,7 +131,7 @@ export const PortfolioData = [
         orientation: "portrait",
         title: "Jungle, for Dinokkivva",
         description: "Fondo de la jungla, para un video musical de DINOKKIVVA",
-        owner: "client",
+        owner: "me",
         fav: false,
     },
     {
@@ -140,7 +140,7 @@ export const PortfolioData = [
         orientation: "portrait",
         title: "Jungle, for Dinokkivva",
         description: "Fondo de la jungla, para un video musical de DINOKKIVVA",
-        owner: "client",
+        owner: "me",
         fav: false,
     },
     {
@@ -149,7 +149,7 @@ export const PortfolioData = [
         orientation: "portrait",
         title: "Jungle, for Dinokkivva",
         description: "Fondo de la jungla, para un video musical de DINOKKIVVA",
-        owner: "client",
+        owner: "me",
         fav: false,
     },
     {
@@ -158,7 +158,7 @@ export const PortfolioData = [
         orientation: "portrait",
         title: "Jungle, for Dinokkivva",
         description: "Fondo de la jungla, para un video musical de DINOKKIVVA",
-        owner: "client",
+        owner: "me",
         fav: false,
     },
     {
@@ -167,7 +167,7 @@ export const PortfolioData = [
         orientation: "portrait",
         title: "Jungle, for Dinokkivva",
         description: "Fondo de la jungla, para un video musical de DINOKKIVVA",
-        owner: "client",
+        owner: "me",
         fav: false,
     },
     {
@@ -185,7 +185,7 @@ export const PortfolioData = [
         orientation: "portrait",
         title: "Jungle, for Dinokkivva",
         description: "Fondo de la jungla, para un video musical de DINOKKIVVA",
-        owner: "client",
+        owner: "me",
         fav: false,
     },
     {
@@ -212,7 +212,7 @@ export const PortfolioData = [
         orientation: "portrait",
         title: "Jungle, for Dinokkivva",
         description: "Fondo de la jungla, para un video musical de DINOKKIVVA",
-        owner: "client",
+        owner: "me",
         fav: false,
     },
     {
@@ -221,7 +221,7 @@ export const PortfolioData = [
         orientation: "portrait",
         title: "Jungle, for Dinokkivva",
         description: "Fondo de la jungla, para un video musical de DINOKKIVVA",
-        owner: "client",
+        owner: "me",
         fav: false,
     },
     {
@@ -230,7 +230,7 @@ export const PortfolioData = [
         orientation: "portrait",
         title: "Jungle, for Dinokkivva",
         description: "Fondo de la jungla, para un video musical de DINOKKIVVA",
-        owner: "client",
+        owner: "me",
         fav: false,
     },
     {
@@ -239,7 +239,7 @@ export const PortfolioData = [
         orientation: "portrait",
         title: "Jungle, for Dinokkivva",
         description: "Fondo de la jungla, para un video musical de DINOKKIVVA",
-        owner: "client",
+        owner: "me",
         fav: false,
     },
 ];

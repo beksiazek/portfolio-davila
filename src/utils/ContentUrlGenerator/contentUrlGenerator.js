@@ -5,12 +5,9 @@ export default function contentUrlGenerator(
 ) {
 	const commonUrl =
 		"https://github.com/beksiazek/portfolio-davila/blob/master/portfolio_content/";
-	const folderName = contentType + "/";
-	const fileExtension = "." + contentType;
-    const fileName = contentKey + (thumbnail ? "_thumb.jpg" : fileExtension)
+    const fileName = contentKey + (thumbnail ? "_thumb.jpg" : ".jpg" )
 	return (
 		commonUrl +
-		folderName +
 		fileName +
 		"?raw=true"
 	);

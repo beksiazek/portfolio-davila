@@ -64,7 +64,11 @@ export default function Portfolio() {
 								{item.type === "avi" && (
 									<AiOutlinePlayCircle className="play-button" />
 								)}
-								<img src={contentUrlGenerator(item.content, item.type, true)} alt="example" />
+								<img src={item.type === "avi"
+											? "https://img.youtube.com/vi/" +
+											  /[^/]*$/.exec(item.content)[0] +
+											  "/maxresdefault.jpg"
+											: contentUrlGenerator(item.content, item.type, true)} alt="example" />
 							</li>
 						);
 					})}
