@@ -4,6 +4,7 @@ import {
 	MdOutlineArrowBackIos,
 	MdOutlineArrowForwardIos,
 } from "react-icons/md";
+import contentUrlGenerator from "../../utils/ContentUrlGenerator/contentUrlGenerator";
 import "./imageSlider.css";
 
 export default function ImageSlider({ slides }) {
@@ -55,11 +56,11 @@ export default function ImageSlider({ slides }) {
 							<>
 								<img
 									src={
-										slide.type === "animation"
+										slide.type === "avi"
 											? "https://img.youtube.com/vi/" +
 											  /[^/]*$/.exec(slide.content)[0] +
 											  "/maxresdefault.jpg"
-											: slide.content
+											: contentUrlGenerator(slide.content, "jpg")
 									}
 									alt={slide.description}
 									className={slide.orientation}
@@ -69,7 +70,7 @@ export default function ImageSlider({ slides }) {
 						<div className="slide-ttip tooltip">
 							<span className="tooltiptext">
 								Ve esta
-								{slide.type === "animation"
+								{slide.type === "avi"
 									? " animación "
 									: " ilustración "}
 								y muchas más en la sección Portfolio!

@@ -15,8 +15,8 @@ export default function Filters(props) {
 				<a className={(currentOwnerTag === "" && currentTypeTag === "") ? "selected" : ""} onClick={() => clearTags()}>Todo</a>
 				<a className={currentOwnerTag === "me" ? "selected" : ""} onClick={() => setCurrentOwnerTag(currentOwnerTag === "me" ? "" : "me")}>Mi Arte</a>
 				<a className={currentOwnerTag === "client" ? "selected" : ""} onClick={() => setCurrentOwnerTag(currentOwnerTag === "client" ? "" : "client")}>Clientes</a>
-				<a className={currentTypeTag === "image" ? "selected" : ""} onClick={() => setCurrentTypeTag(currentTypeTag === "image" ? "" : "image")}>Ilustraciones</a>
-				<a className={currentTypeTag === "animation" ? "selected" : ""} onClick={() => setCurrentTypeTag(currentTypeTag === "animation" ? "" : "animation")}>Animación</a>
+				<a className={currentTypeTag === "jpg" ? "selected" : ""} onClick={() => setCurrentTypeTag(currentTypeTag === "jpg" ? "" : "jpg")}>Ilustraciones</a>
+				<a className={currentTypeTag === "avi" ? "selected" : ""} onClick={() => setCurrentTypeTag(currentTypeTag === "avi" ? "" : "avi")}>Animación</a>
 			</div>
 			<hr></hr>
 		</div>

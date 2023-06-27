@@ -1,5 +1,6 @@
 import React from "react";
 import ImageMagnifier from "../ImageMagnifier/ImageMagnifier";
+import contentUrlGenerator from "../../utils/ContentUrlGenerator/contentUrlGenerator";
 import "./portfolioModal.css";
 
 export default function PortfolioModal(props) {
@@ -14,14 +15,14 @@ export default function PortfolioModal(props) {
 					</span>
 				</div>
 				<div className="modal-body">
-					{item.type === "animation" ? (
+					{item.type === "avi" ? (
 						<iframe
 							src={item.content}
 							title="YouTube video player"
 							allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen"
 						></iframe>
 					) : (
-						<ImageMagnifier image={item.content}/>
+						<ImageMagnifier image={contentUrlGenerator(item.content, item.type)}/>
 					)}
 				</div>
 				<div className="modal-footer">

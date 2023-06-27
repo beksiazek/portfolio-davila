@@ -4,6 +4,7 @@ import { AiOutlinePlayCircle } from "react-icons/ai";
 import PortfolioModal from "../../components/PortfolioModal/PortfolioModal";
 import Footer from "../../components/Footer/Footer";
 import { PortfolioData } from "../../assets/PortfolioData";
+import contentUrlGenerator from "../../utils/ContentUrlGenerator/contentUrlGenerator";
 import "./portfolio.css";
 
 export default function Portfolio() {
@@ -60,14 +61,10 @@ export default function Portfolio() {
 								}
 								key={index}
 							>
-								{item.type === "animation" && (
+								{item.type === "avi" && (
 									<AiOutlinePlayCircle className="play-button" />
 								)}
-								<img src={item.type === "animation"
-											? "https://img.youtube.com/vi/" +
-											  /[^/]*$/.exec(item.content)[0] +
-											  "/maxresdefault.jpg"
-											: item.content} alt="example" />
+								<img src={contentUrlGenerator(item.content, item.type, true)} alt="example" />
 							</li>
 						);
 					})}
