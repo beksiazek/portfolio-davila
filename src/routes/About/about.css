@@ -21,6 +21,7 @@
 @media screen and (max-width: 600px) {
     .about-img {
         min-width: 60vw;
+        margin-left: 0;
         margin-bottom: 2rem;
     }
     

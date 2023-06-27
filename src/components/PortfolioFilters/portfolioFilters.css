@@ -27,3 +27,13 @@
         color: var(--color-text-hl);
     }
 }
+
+@media screen and (max-width: 600px) {
+    .filters-container > a {
+        margin: 0;
+    }
+
+    .filters-container > a:first-child {
+        margin: 0 5rem;
+    }
+}
