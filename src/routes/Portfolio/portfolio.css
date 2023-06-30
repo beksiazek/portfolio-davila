@@ -17,6 +17,7 @@ ul {
 }
 
 .portfolio-item {
+    width: fit-content;
     break-inside: avoid;
     opacity: 0;
     height: 0;
@@ -58,12 +59,19 @@ ul {
     }
 }
 
-@media screen and (max-width: 600px) {
+
+@media screen and (max-width: 1000px) {
     .masonry-gallery {
-        columns: 8rem;
+        columns: 10rem;
     }
 
     .gallery-container {
         padding: 1rem;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .masonry-gallery {
+        columns: 8rem;
     }
 }
