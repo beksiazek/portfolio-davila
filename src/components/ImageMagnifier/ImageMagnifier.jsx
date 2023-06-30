@@ -7,7 +7,7 @@ export default function ImageMagnifier(props) {
 		magnifierWidth = 150,
 		zoomLevel = 1.5;
 
-	const { image } = props;
+	const { image, className } = props;
 	const [[x, y], setXY] = useState([0, 0]);
 	const [[imgWidth, imgHeight], setSize] = useState([0, 0]);
 	const [showMagnifier, setShowMagnifier] = useState(false);
@@ -30,7 +30,7 @@ export default function ImageMagnifier(props) {
 	};
 
 	return (
-		<div className="image-magnifier-container">
+		<div className={"image-magnifier-container " + className}>
 			<img
 				id="modal-image"
 				src={image}

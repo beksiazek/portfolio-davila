@@ -48,7 +48,7 @@ p {
     font-family: 'Comic Neue', cursive;
     font-weight: 600;
     line-height: 1.5;
-    font-size: 1.05rem;
+    font-size: 1.1rem;
 }
 
 hr {
@@ -76,7 +76,7 @@ hr {
     font-weight: 500;
 }
 
-.play-button {
+.play-icon {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -84,8 +84,12 @@ hr {
     width: 30%;
     height: 30%;
     opacity: 0.8;
-    color: rgb(138, 69, 127);
-    transition: 1s;
+    animation: colorful 2s ease-in-out infinite alternate;
+}
+
+@keyframes colorful{
+    From{color: rgb(193, 255, 78)}
+To {color: deeppink}
 }
 
 .tooltiptext {

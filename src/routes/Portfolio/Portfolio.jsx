@@ -61,7 +61,7 @@ export default function Portfolio({ portfolioData }) {
 								key={index}
 							>
 								{item.type === "avi" && (
-									<AiOutlinePlayCircle className="play-button" />
+									<AiOutlinePlayCircle className="play-icon" />
 								)}
 								<img src={contentUrlGenerator(item.content, item.type, true)} alt={item.description} loading="lazy" />
 							</li>
