@@ -112,6 +112,10 @@ To {color: deeppink}
         height: 70vh!important;
         object-fit: cover;
     }
+
+    .slide-ttip {
+        bottom: 8%;
+    }
 }
 
 @media screen and (max-width:600px) {
@@ -129,5 +133,9 @@ To {color: deeppink}
         margin-right: 0;
         border-top-right-radius: 0;
         border-bottom-right-radius: 0;
+    }
+
+    .slide-ttip {
+        bottom: 3%;
     }
 }
