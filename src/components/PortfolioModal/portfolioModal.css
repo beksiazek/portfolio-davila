@@ -12,22 +12,6 @@
   background-color: rgba(0, 0, 0, 0.8);
 }
 
-.modal-header {
-  padding: 0.7rem 1rem;
-  background-color: var(--color-primary);
-  color: black;
-  display: flex;
-  border-radius: 50px 20px 0 0;
-  border-bottom: 10px;
-  border-style: solid;
-  border-image: linear-gradient(0deg, var(--color-primary-variant), var(--color-primary) 1%) 1;
-}
-
-.modal-header h2 {
-  padding: 1rem 0 0.5rem 2rem;
-  margin-right: auto;
-}
-
 .modal-body {
   justify-content: center;
   display: flex;
@@ -40,21 +24,6 @@ iframe {
   max-height: 90vh;
   height: auto;
   aspect-ratio: 16/9;
-}
-
-.modal-footer {
-  padding: 1rem 2rem;
-  background-color: var(--color-primary);
-  color: black;
-  border-radius: 0 0 60px 20px;
-  border-top: 10px;
-  border-style: solid;
-  border-image: linear-gradient(0deg, var(--color-primary)99%, var(--color-primary-variant)) 1;
-}
-
-.modal-footer p {
-  font-weight: 600;
-  font-size: 1.1rem;
 }
 
 .modal-content {
@@ -124,8 +93,8 @@ iframe {
   padding: 3rem 1rem;
 }
 
-.content-info-text h2 {
-  margin-bottom: 1.5rem;
+.content-info-text p {
+  margin-top: 1rem;
 }
 
 @keyframes colorful{

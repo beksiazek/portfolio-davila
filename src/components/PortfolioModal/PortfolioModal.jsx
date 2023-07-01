@@ -72,8 +72,14 @@ export default function PortfolioModal(props) {
 						/>
 					)}
 					<div className={"content-info-text " + contentInfoClass()}>
-						<h2>{item.title}</h2>
-						<p>{item.description}</p>
+						{item.title !== "" ? (
+							<>
+								<h2>{item.title}</h2>
+								<p>{item.description}</p>
+							</>
+						) : (
+							<h2>{item.description}</h2>
+						)}
 					</div>
 					{isMobile() ? (
 						<AiOutlineInfoCircle
