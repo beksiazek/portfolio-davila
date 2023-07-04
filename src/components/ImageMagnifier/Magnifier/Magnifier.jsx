@@ -20,7 +20,7 @@ export default function Magnifier(props) {
                 position: "absolute",
                 pointerEvents: "none",
                 opacity: "1",
-                border: "3px dashed rgb(253, 255, 141)",
+                border: "3px dashed rgb(255, 208, 0)",
                 backgroundColor: "transparent",
                 backgroundRepeat: "no-repeat",
 				display: showMagnifier ? "" : "none",

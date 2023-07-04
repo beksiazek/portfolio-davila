@@ -7,12 +7,13 @@ import {
 import contentUrlGenerator from "../../utils/contentUrlGenerator";
 import "./imageSlider.css";
 
-export default function ImageSlider({ slides }) {
+export default function ImageSlider({ slides, loadingStyle }) {
 	const [currentItem, setCurrentItem] = useState(0);
 	const [userInteraction, setUserInteraction] = useState(false);
 	const length = slides.length;
 	const timeoutRef = useRef(null);
 	const delay = { auto: 7000, user: 15000 };
+
 	const resetTimeout = () => {
 		if (timeoutRef.current) {
 			clearTimeout(timeoutRef.current);
@@ -52,17 +53,11 @@ export default function ImageSlider({ slides }) {
 						}
 						key={index}
 					>
-						{index === currentItem && (
-							<>
-								<img
-									src={
-										contentUrlGenerator(slide.content, slide.type)
-									}
-									alt={slide.description}
-									className={slide.orientation}
-								/>
-							</>
-						)}
+						<img
+							src={contentUrlGenerator(slide.content, slide.type)}
+							alt={slide.description}
+							className={slide.orientation}
+						/>
 						<div className="slide-ttip tooltip">
 							<span className="tooltiptext">
 								Ve esta

@@ -18,6 +18,10 @@
   position: relative;
 }
 
+.modal-body-not-loaded {
+  display: none;
+}
+
 iframe {
   max-width: 100%;
   min-width: 65vw;
@@ -44,11 +48,17 @@ iframe {
   margin-left: auto;
 }
 
-.close {
-  margin-left: 2rem;
+.close-button {
+  position: fixed;
+  top: 3rem;
+  right: 5rem;
   cursor: pointer;
   font-size: 2rem;
   color: blueviolet;
+}
+
+.close-button.info-portrait {
+  right: 7rem;
 }
 
 .info-icon.info-landscape {
@@ -139,8 +149,7 @@ To {color: deeppink}
     flex-direction: column;
   }
 
-  .close {
-    position: fixed;
+  .close-button {
     top: 2rem;
     right: 2rem;
     font-size: 2.5rem;

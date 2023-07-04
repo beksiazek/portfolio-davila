@@ -11,6 +11,7 @@ export default function Portfolio({ portfolioData }) {
 	const [currentTypeTag, setCurrentTypeTag] = useState("");
 	const [displayModal, setDisplayModal] = useState(false);
 	const [modalItem, setModalItem] = useState();
+	const [galleryIsLoading, setGalleryIsLoading] = useState(true);
 
 	const openModal = () => {
 		setDisplayModal(true);
@@ -28,6 +29,10 @@ export default function Portfolio({ portfolioData }) {
 
 	useEffect(() => {
 		document.body.style.setProperty("--overflow-behavior", "scroll");
+		Promise.all(Array.from(document.images).filter(img => !img.complete).map(img => new Promise(resolve => { img.onload = img.onerror = resolve; }))).then(() => {
+			console.log('images finished loading');
+			setGalleryIsLoading(false);
+		});
 	}, []);
 
 	return (
@@ -41,7 +46,7 @@ export default function Portfolio({ portfolioData }) {
 				setCurrentOwnerTag={setCurrentOwnerTag}
 				setCurrentTypeTag={setCurrentTypeTag}
 			/>
-			<div className="gallery-container">
+			<div className={"gallery-container" + (galleryIsLoading ? " gallery-is-loading" : "")}>
 				<ul className="masonry-gallery">
 					{portfolioData.map((item, index) => {
 						return (
