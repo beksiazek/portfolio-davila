@@ -1,13 +1,14 @@
 export default function contentUrlGenerator(
 	contentKey,
 	contentType,
-	thumbnail = false
+	thumbnail = false,
+	maxres = false
 ) {
 	if (contentType === "avi") {
 		return (
 			"https://img.youtube.com/vi/" +
 			/[^/]*$/.exec(contentKey)[0] +
-			"/maxresdefault.jpg"
+			"/" + (maxres === true ? "maxres" : "hq") + "default.jpg"
 		);
 	}
 	const commonUrl =

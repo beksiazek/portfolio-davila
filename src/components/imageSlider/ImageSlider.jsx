@@ -54,7 +54,7 @@ export default function ImageSlider({ slides, loadingStyle }) {
 						key={index}
 					>
 						<img
-							src={contentUrlGenerator(slide.content, slide.type)}
+							src={contentUrlGenerator(slide.content, slide.type, false, true)}
 							alt={slide.description}
 							className={slide.orientation}
 						/>
