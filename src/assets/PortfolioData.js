@@ -91,6 +91,15 @@ export const PortfolioData = [
 		fav: true,
 	},
 	{
+		content: "cafemoodboard",
+		type: "jpg",
+		orientation: "landscape",
+		title: "Identidad corporativa - Café",
+		description: "Moodboard de identidad corporativa para un proyecto de Kinesis Productions.",
+		owner: "client",
+		fav: true,
+	},
+	{
 		content: "aranas",
 		type: "jpg",
 		orientation: "landscape",
