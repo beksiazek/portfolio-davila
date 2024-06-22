@@ -141,7 +141,7 @@ export const PortfolioData = [
 		orientation: "landscape",
 		title: "Learn the Farm Animals with Dinnokivva!",
 		description: "Video educativo infantil para el canal de Youtube de Dinnokivva.",
-		owner: "me",
+		owner: "client",
 		fav: true,
 	},
 	{

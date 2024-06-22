@@ -22,50 +22,6 @@ ul {
     padding: 0;
 }
 
-.portfolio-item {
-    width: fit-content;
-    break-inside: avoid;
-    opacity: 0;
-    height: 0;
-    transform: scale(0);
-    transition: 1s;
-    border-radius: 20px 25px;
-}
-
-.portfolio-item.active {
-    height: auto;
-    transform: scale(1);
-    opacity: 1;
-}
-.portfolio-item img {
-    display: block;
-    height: auto;
-    max-width: 100%;
-    margin-bottom: 0;
-    border-radius: 25px 30px;
-    transition: 1s;
-}
-
-.portfolio-item.active img {
-    margin-bottom: 1.5rem;
-}
-
-@media (hover: hover) {
-    .portfolio-item:hover {
-        box-shadow: 0 0 8px 3px rgba(0, 0, 0, 0.418);
-        border-radius: 7px;
-    }
-
-    .portfolio-item:hover img {
-        border-radius: 7px;
-    }
-
-    .portfolio-item:hover .play-button {
-        color: rgb(211, 43, 226);
-    }
-}
-
-
 @media screen and (max-width: 1000px) {
     .masonry-gallery {
         columns: 10rem;

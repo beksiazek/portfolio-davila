@@ -1,6 +1,7 @@
 import React from 'react';
 import { AiOutlinePlayCircle } from "react-icons/ai";
 import contentUrlGenerator from '../../utils/contentUrlGenerator';
+import "./galleryItem.css";
 
 export default function GalleryItem({ item, index, currentOwnerTag, currentTypeTag, setModalItem, openModal }) {
     return (
