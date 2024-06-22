@@ -1,9 +1,8 @@
 import React, { useState, useEffect } from "react";
 import Filters from "../../components/PortfolioFilters/PortfolioFilters";
-import { AiOutlinePlayCircle } from "react-icons/ai";
+import Gallery from "../../components/Gallery/Gallery";
 import PortfolioModal from "../../components/PortfolioModal/PortfolioModal";
 import Footer from "../../components/Footer/Footer";
-import contentUrlGenerator from "../../utils/contentUrlGenerator";
 import "./portfolio.css";
 
 export default function Portfolio({ portfolioData }) {
@@ -46,34 +45,7 @@ export default function Portfolio({ portfolioData }) {
 				setCurrentOwnerTag={setCurrentOwnerTag}
 				setCurrentTypeTag={setCurrentTypeTag}
 			/>
-			<div className={"gallery-container" + (galleryIsLoading ? " gallery-is-loading" : "")}>
-				<ul className="masonry-gallery">
-					{portfolioData.map((item, index) => {
-						return (
-							<li
-								onClick={() => {
-									setModalItem(item);
-									openModal();
-								}}
-								className={
-									(item.owner === currentOwnerTag ||
-										currentOwnerTag === "") &&
-									(item.type === currentTypeTag ||
-										currentTypeTag === "")
-										? "portfolio-item active"
-										: "portfolio-item"
-								}
-								key={index}
-							>
-								{item.type === "avi" && (
-									<AiOutlinePlayCircle className="play-icon" />
-								)}
-								<img src={contentUrlGenerator(item.content, item.type, true)} alt={item.description} loading="lazy" />
-							</li>
-						);
-					})}
-				</ul>
-			</div>
+			<Gallery galleryIsLoading={galleryIsLoading} portfolioData={portfolioData} currentOwnerTag={currentOwnerTag} currentTypeTag={currentTypeTag} setModalItem={setModalItem} openModal={openModal} />
 			{displayModal && (
 				<PortfolioModal item={modalItem} closeModal={closeModal} />
 			)}
