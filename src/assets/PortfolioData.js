@@ -1,7 +1,35 @@
 export const PortfolioData = [
 	{
+		content: "https://www.youtube.com/embed/zCvJdaQESyo",
+		type: "avi",
+		orientation: "landscape",
+		title: "DULCE",
+		description:
+			"Video animado desarrollado junto con mis compañeros de equipo para nuestra tesis de la tecnicatura.",
+		owner: "me",
+		fav: true,
+	},
+	{
+		content: "marca_alemana",
+		type: "dsg",
+		orientation: "landscape",
+		title: "Lebensretter",
+		description: "Ilustración para una campaña del emprendimiento alemán Tylo.",
+		owner: "client",
+		fav: false,
+	},
+	{
+		content: "cafemoodboard",
+		type: "dsg",
+		orientation: "landscape",
+		title: "Identidad corporativa - Café",
+		description: "Moodboard de identidad corporativa para un proyecto de Kinesis Productions.",
+		owner: "client",
+		fav: false,
+	},
+	{
 		content: "adv_aging",
-		type: "jpg",
+		type: "dsg",
 		orientation: "portrait",
 		title: "Anuncio",
 		description: "Diseño gráfico de anuncio orientado a su difusión en redes sociales.",
@@ -10,7 +38,7 @@ export const PortfolioData = [
 	},
 	{
 		content: "adv_fitness",
-		type: "jpg",
+		type: "dsg",
 		orientation: "portrait",
 		title: "Anuncio",
 		description: "Diseño gráfico de anuncio orientado a su difusión en redes sociales.",
@@ -19,7 +47,7 @@ export const PortfolioData = [
 	},
 	{
 		content: "adv_gym",
-		type: "jpg",
+		type: "dsg",
 		orientation: "portrait",
 		title: "Anuncio",
 		description: "Diseño gráfico de anuncio orientado a su difusión en redes sociales.",
@@ -28,7 +56,7 @@ export const PortfolioData = [
 	},
 	{
 		content: "adv_ingles",
-		type: "jpg",
+		type: "dsg",
 		orientation: "portrait",
 		title: "Anuncio",
 		description: "Diseño gráfico de anuncio orientado a su difusión en redes sociales.",
@@ -37,7 +65,7 @@ export const PortfolioData = [
 	},
 	{
 		content: "adv_padres",
-		type: "jpg",
+		type: "dsg",
 		orientation: "portrait",
 		title: "Anuncio",
 		description: "Diseño gráfico de anuncio orientado a su difusión en redes sociales.",
@@ -46,7 +74,7 @@ export const PortfolioData = [
 	},
 	{
 		content: "adv_potencia",
-		type: "jpg",
+		type: "dsg",
 		orientation: "portrait",
 		title: "Anuncio",
 		description: "Diseño gráfico de anuncio orientado a su difusión en redes sociales.",
@@ -55,7 +83,7 @@ export const PortfolioData = [
 	},
 	{
 		content: "adv_ruth",
-		type: "jpg",
+		type: "dsg",
 		orientation: "portrait",
 		title: "Anuncio",
 		description: "Diseño gráfico de anuncio orientado a su difusión en redes sociales.",
@@ -79,6 +107,15 @@ export const PortfolioData = [
 		description: "Ilustraciones para un video educativo del canal de youtube de Dinokkivva.",
 		owner: "client",
 		fav: false,
+	},
+	{
+		content: "https://www.youtube.com/embed/N2-2_DGxf_A",
+		type: "avi",
+		orientation: "landscape",
+		title: "Learn School Supplies with Dinnokivva!",
+		description: "Video educativo infantil para el canal de Youtube de Dinnokivva.",
+		owner: "client",
+		fav: true,
 	},
 	{
 		content: "https://www.youtube.com/embed/LrXyBWzZ2Pg",
@@ -108,32 +145,13 @@ export const PortfolioData = [
 		fav: true,
 	},
 	{
-		content: "https://www.youtube.com/embed/N2-2_DGxf_A",
-		type: "avi",
-		orientation: "landscape",
-		title: "Learn School Supplies with Dinnokivva!",
-		description: "Video educativo infantil para el canal de Youtube de Dinnokivva.",
-		owner: "client",
-		fav: true,
-	},
-	{
 		content: "https://www.youtube.com/embed/0IRo2GEr3Bk",
 		type: "avi",
 		orientation: "landscape",
 		title: "Dinnokivva's Zooming Adventure: Discover Transportation Wonders",
 		description: "Video educativo infantil para el canal de Youtube de Dinnokivva.",
 		owner: "client",
-		fav: true,
-	},
-	{
-		content: "https://www.youtube.com/embed/zCvJdaQESyo",
-		type: "avi",
-		orientation: "landscape",
-		title: "DULCE",
-		description:
-			"Video animado desarrollado junto con mis compañeros de equipo para nuestra tesis de la tecnicatura.",
-		owner: "me",
-		fav: true,
+		fav: false,
 	},
 	{
 		content: "vegetales",
@@ -152,15 +170,6 @@ export const PortfolioData = [
 		description: "Video educativo infantil para el canal de Youtube de Dinnokivva.",
 		owner: "client",
 		fav: true,
-	},
-	{
-		content: "cafemoodboard",
-		type: "jpg",
-		orientation: "landscape",
-		title: "Identidad corporativa - Café",
-		description: "Moodboard de identidad corporativa para un proyecto de Kinesis Productions.",
-		owner: "client",
-		fav: false,
 	},
 	{
 		content: "aranas",
@@ -431,15 +440,6 @@ export const PortfolioData = [
 		title: "",
 		description: "Ilustración original.",
 		owner: "me",
-		fav: false,
-	},
-	{
-		content: "marca_alemana",
-		type: "jpg",
-		orientation: "landscape",
-		title: "Lebensretter",
-		description: "Ilustración para una campaña del emprendimiento alemán Tylo.",
-		owner: "client",
 		fav: false,
 	},
 	{

@@ -7,7 +7,7 @@ import "./portfolio.css";
 
 export default function Portfolio({ portfolioData }) {
 	const [currentOwnerTag, setCurrentOwnerTag] = useState("");
-	const [currentTypeTag, setCurrentTypeTag] = useState("");
+	const [currentTypeTag, setCurrentTypeTag] = useState("jpg");
 	const [displayModal, setDisplayModal] = useState(false);
 	const [modalItem, setModalItem] = useState();
 	const [galleryIsLoading, setGalleryIsLoading] = useState(true);
