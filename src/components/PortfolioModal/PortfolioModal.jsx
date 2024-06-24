@@ -62,7 +62,7 @@ export default function PortfolioModal(props) {
 							onLoad={() => setContentHasLoaded(true)}
 							allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen"
 						></iframe>
-					) : isMobile() ? (
+					) : isMobile() || item.type === "dsg" ? (
 						<img
 							id="modal-image"
 							src={contentUrlGenerator(
