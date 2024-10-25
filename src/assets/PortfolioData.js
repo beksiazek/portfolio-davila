@@ -1,5 +1,24 @@
 export const PortfolioData = [
 	{
+		content: "https://www.youtube.com/embed/zCvJdaQESyo",
+		type: "avi",
+		orientation: "landscape",
+		title: "DULCE",
+		description:
+			"Video animado desarrollado junto con mis compañeros de equipo para nuestra tesis de la tecnicatura.",
+		owner: "me",
+		fav: true,
+	},
+	{
+		content: "adv_orgullo",
+		type: "dsg",
+		orientation: "portrait",
+		title: "Banner para marcha del Orgullo",
+		description: "Diseño para concurso que se realizó para la campaña de difusión de la marcha del orgullo del 2023.",
+		owner: "client",
+		fav: false,
+	},
+	{
 		content: "casa_campo",
 		type: "jpg",
 		orientation: "landscape",
@@ -25,16 +44,6 @@ export const PortfolioData = [
 		description: "Fondo para un video animado de Dinnokivva.",
 		owner: "client",
 		fav: false,
-	},
-	{
-		content: "https://www.youtube.com/embed/zCvJdaQESyo",
-		type: "avi",
-		orientation: "landscape",
-		title: "DULCE",
-		description:
-			"Video animado desarrollado junto con mis compañeros de equipo para nuestra tesis de la tecnicatura.",
-		owner: "me",
-		fav: true,
 	},
 	{
 		content: "marca_alemana",
